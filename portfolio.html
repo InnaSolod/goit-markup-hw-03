@@ -9,27 +9,30 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
     rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
     <link rel="stylesheet" href="./css/styles.css"/>
 </head>
 
 <body>
     <header>
-        <a href="./index.html" class="logo logo-font"><span class="logo-color logo-font">Web</span>Studio</a>
-        <nav>
-            <ul class="site-nav">
-                <li><a href="./index.html">Студия</a></li>
-                <li><a href="./portfolio.html" class="page">Портфолио</a></li>
-                <li><a href="">Контакты</a></li>
+        <div class="container">
+            <a href="./index.html" class="logo logo-font"><span class="logo-color logo-font">Web</span>Studio</a>
+            <nav>
+                <ul class="site-nav">
+                    <li><a href="./index.html">Студия</a></li>
+                    <li><a href="./portfolio.html" class="page">Портфолио</a></li>
+                    <li><a href="">Контакты</a></li>
+                </ul>
+            </nav>
+            <ul class="contacts">
+                <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                <li><a href="tel:+380961111111"> +38 096 111 11 11 </a></li>
             </ul>
-        </nav>
-        <ul class="contacts">
-            <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-            <li><a href="tel:+380961111111"> +38 096 111 11 11 </a></li>
-        </ul>
+        </div>
     </header>
     
     <main>
-        <section>
+        <section class="container">
            <h1 class="hite">Портфолио</h1>
             <!-- Фильтры -->
             <ul class="filters">
@@ -40,7 +43,7 @@
                 <li><button type="button" class="filters-button">Маркетинг</button></li>
             </ul>
             <!-- Проекты -->
-            <ul class="project">
+            <ul class="project container">
                 <li>
                     <img src="./images/project-1.jpg" alt="Технокряк" width="370">
                     <h2 class="project-title">Технокряк</h2>
@@ -90,7 +93,7 @@
         </section>
     </main>
 
-    <footer class="footer">
+    <footer class="footer container">
         <a href="./index.html" class="logo-footer logo-font"><span class="logo-color logo-font">Web</span>Studio</a>
         <address>
             <p class="text-footer">г. Киев, пр-т Леси Украинки, 26</p>
