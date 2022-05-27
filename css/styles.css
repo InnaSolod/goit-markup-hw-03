@@ -5,6 +5,7 @@
 	--background-color: #2f303a;
 	--logo-black-color: #000000;
 	--text-white-color: #ffffff;
+	--background-team: #F5F4FA;
 }
 
 body {
@@ -18,12 +19,18 @@ body {
 }
 
 .container {
-	width: 1170px;
-	margin-left: 15px;
-	margin-right: 15px;
+	width: 1200px;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 /* header */
+.main {
+	display: flex;
+	align-items: center;
+}
 .logo-font {
 	font-family: "Raleway", sans-serif;
 	font-weight: 700;
@@ -43,7 +50,21 @@ ul {
 	padding: 0;
 	margin: 0;
 }
+.site-nav {
+	display: flex;
+	margin-left: 93px;
+}
+.site-nav li {
+	margin-right: 50px;
+}
+.site-nav li:last-child {
+	margin-right: 0;
+}
 .site-nav a {
+	padding-top: 32px;
+	padding-bottom: 32px;
+	display: block;
+
 	color: var(--title-color);
 	text-decoration: none;
 	font-weight: 500;
@@ -56,6 +77,13 @@ ul {
 }
 .site-nav .page {
 	color: var(--accent-color);
+}
+.contacts {
+	display: flex;
+	margin-left: auto;
+}
+.contacts li + li {
+	margin-left: 50px;
 }
 .contacts a {
 	color: var(--text-color);
@@ -72,14 +100,13 @@ ul {
 .hero {
 	background: var(--background-color);
 	text-align: center;
-	margin-bottom: 94px;
+	height: 600px;
+	padding-top: 200px;
 }
 
 .hero-title {
 	margin-top: 0;
 	margin-bottom: 30px;
-	padding-left: 237px;
-	padding-right: 237px;
 
 	color: var(--text-white-color);
 	font-weight: 900;
@@ -104,9 +131,9 @@ ul {
 }
 /* section */
 .section {
-	margin-top: 0;
-	margin-bottom: 94px;
-}
+	padding-top: 94px;
+	padding-bottom: 94px;
+}	
 
 .section-title {
 	margin-top: 0;
@@ -118,14 +145,17 @@ ul {
 	line-height: 1.2;
 	text-transform: uppercase;
 }
-.section-text {
+.section p {
 	margin-top: 0;
 	margin-bottom: 0;
 }
+.team {
+	background-color: var(--background-team);
+}
 
 .title {
-	margin-bottom: 0;
-	margin-bottom: 50px;
+	margin-top: 94px;
+
 
 	color: var(--title-color);
 	font-weight: 700;
@@ -134,12 +164,19 @@ ul {
 	text-align: center;
 }
 .title-name {
+	margin-top: 30px;
+	margin-bottom: 10px;
+
 	color: var(--title-color);
 	font-weight: 500;
 	font-size: 16px;
 	line-height: 1.2;
 }
 .text-career {
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-bottom: 30px;
+
 	font-size: 16px;
 	line-height: 1.2;
 }
