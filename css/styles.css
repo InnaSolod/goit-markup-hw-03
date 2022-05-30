@@ -152,6 +152,9 @@ ul {
 .text {
 	display: flex;
 }
+.text li {
+	width: 270px;
+}
 .text li + li {
 	margin-left: 30px;
 }
@@ -197,8 +200,8 @@ ul {
 	display: block;
 }
 .title {
-	padding-bottom: 50px;
-	margin: 0;
+	margin-bottom: 50px;
+	margin-top: 0;
 
 	color: var(--title-color);
 	font-weight: 700;
@@ -314,9 +317,9 @@ ul {
 	color: var(--text-white-color);
 	text-decoration: none;
 }
-.logo-web {
-	margin-bottom: 20px;
+.logo-footer {
 	display: block;
+	margin-bottom: 20px;
 }
 .text-footer {
 	margin-top: 0;
